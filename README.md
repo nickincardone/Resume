@@ -1,8 +1,12 @@
-Resume
-======
+# Resume
 
-My resume webpage
+## My Resume Webpage
 
-To view it go to nickincardone.com
+View it live on my [website](http://nickincardone.com)
 
-To view locally clone folder and open resume.html
+### Setup
+
+Clone repo and run:
+`npm install && grunt`
+
+and open `index.html`

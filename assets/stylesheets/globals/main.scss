@@ -1,0 +1,17 @@
+body {
+    background-color: $ni-blue;
+    font-family: $main-font;
+    font-weight: 400;
+  	font-size: 1em;
+  	color: #363636;
+}
+
+@media (min-width: 768px) {
+    .container {
+        max-width: 920px;
+    }
+}
+
+.content-container {
+	background-color: $white;
+}

@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en" ng-app="ni.Main">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+  <title>Nick Incardone Boilerplate</title>
+
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+  <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="dist/assets/stylesheets/styles.css">
+</head>
+<body>
+  <div ui-view="header"></div>
+  <div class='container'>
+    <div ui-view></div>
+  </div>
+  <div ui-view="footer"></div>
+
+
+  <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+  <script src="assets/javascripts/components.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+  <script src="dist/app.js"></script>
+  <script type="text/javascript">
+    var callback = function(){
+  $('.item-skills').each(function(){
+    newWidth = $(this).parent().width() * $(this).data('percent');
+    $(this).width(0);
+    $(this).animate({
+        width: newWidth,
+    }, 1000);
+  });
+  $('.icons-red').each(function(){
+    height = $(this).height();
+    $(this).animate({
+        height: 14,
+    }, 2000);
+  });
+};
+$(document).ready(callback);
+
+var resize;
+window.onresize = function() {
+  clearTimeout(resize);
+  resize = setTimeout(function(){
+    callback();
+  }, 100);
+};
+  </script>
+</body>
+</html>
