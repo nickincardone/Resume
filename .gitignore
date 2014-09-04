@@ -4,3 +4,5 @@ node_modules/
 spec/reports/
 dist/app.js
 dist/assets/
+dist/niwebsite.min.js
+assets/javascripts/templates_module.js

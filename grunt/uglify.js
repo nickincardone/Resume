@@ -6,8 +6,8 @@ module.exports = {
       }
     },
     files: {
-      '<%= distPath %>/niValidator.min.js': [
-        '<%= distPath %>/niValidator.js'
+      '<%= distPath %>/niwebsite.min.js': [
+        '<%= distPath %>/app.js'
       ]
     }
   }
