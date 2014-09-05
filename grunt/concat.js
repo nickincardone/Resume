@@ -8,6 +8,8 @@ module.exports = {
     src: [
       '<%= jsPath %>/global/validator_module.js',
       '<%= jsPath %>/global/*.js',
+      '<%= jsPath %>/global/bargraph/bargraph_module.js',
+      '<%= jsPath %>/global/bargraph/*.js',
       '<%= jsPath %>/states/states_module.js',
       '<%= jsPath %>/states/*.js',
       '<%= jsPath %>/templates_module.js',

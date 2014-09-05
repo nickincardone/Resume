@@ -6,7 +6,7 @@
   dependencies = [
     'ni.States',
     'ni.Templates',
-    
+    'ni.Bargraph',
     'ni.Validator'
   ];
 

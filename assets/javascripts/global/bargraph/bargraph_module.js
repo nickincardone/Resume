@@ -7,6 +7,6 @@
     
   ]; 
 
-  angular.module('ni.BarGraph', dependencies);
+  angular.module('ni.Bargraph', dependencies);
 
 })(angular);
