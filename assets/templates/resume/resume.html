@@ -57,71 +57,15 @@
 
         <div class="section">
           <h2>Experience</h2>
-          <div class="activity clearfix">
+          <div ng-repeat="experience in experiences"class="activity clearfix">
             <div class="col-xs-3 innerE">
-              <div class="title">Procur</div>
-              <div class="info">Atlanta, GA</div>
-              <div class="info">07/2014-present</div>
+              <div class="title">{{experience.place}}</div>
+              <div class="info">{{experience.location}}</div>
+              <div class="info">{{experience.time}}</div>
             </div>
             <div class="col-xs-9">
-              <div class="profession">Web Development Intern</div>
-              <div class="description">Developing a large scale web application. Working on the back end utilizing node.js on the sails framework, with a MongoDB database, and on the front end using angular.js, sass, and jade. Using python to extract, clean, and transform data from large structured Excel spreadsheets. Working in a medium size team utilizing agile development principles.
-              </div>
-            </div>
-          </div>
-          <div class="activity clearfix">
-            <div class="col-xs-3 innerE">
-              <div class="title">QuantiSense</div>
-              <div class="info">Atlanta, GA</div>
-              <div class="info">05/2014-present</div>
-            </div>
-            <div class="col-xs-9">
-              <div class="profession">Data Processing Intern</div>
-              <div class="description">Working remotely to transform data from structured .csv files to stylized Excel sheets using Java and Groovy (using the APACHE POI library). Creating client facing GUI's using VBA in Excel for large scale data inputs.
-              </div>
-            </div>
-          </div>
-          <div class="activity clearfix">
-            <div class="col-xs-3 innerE">
-              <div class="title">Publix</div>
-              <div class="info">Atlanta, GA</div>
-              <div class="info">08/2006-present</div>
-            </div>
-            <div class="col-xs-9">
-              <div class="profession">Customer Service Staff</div>
-              <div class="description">Manage front end associates and their schedules. Open and close the
-                store. Oversee and create dynamic sales oppurtunites. Handle money services, keep cash
-                accountability of cashiers, and handle accounting paperwork at the store level. Manage and
-                order inventory and supplies. Lead staff memeber when it comes to cash accountability,
-                supply ordering, and customer assistance.
-              </div>
-            </div>
-          </div>
-          <div class="activity clearfix">
-            <div class="col-xs-3 innerE">
-              <div class="title">Ivan Allen College</div>
-              <div class="info">Atlanta, GA</div>
-              <div class="info">09/2012-05/2013</div>
-            </div>
-            <div class="col-xs-9">
-              <div class="profession">Information Technology Assistant</div>
-              <div class="description">Helped identify and repair network issues. Managed moves, adds, and
-                changes of network computers. Troubleshot desktop hardware/software problems. Assited with
-                oversight on about 100 classroom machines and 25 faculty computers unsupervised, during a
-                period of two months when full time IT engineer was on leave.
-              </div>
-            </div>
-          </div>
-          <div class="activity clearfix">
-            <div class="col-xs-3 innerE">
-              <div class="title">Heartbyte</div>
-              <div class="info">Atlanta, GA</div>
-              <div class="info">05/2012-08/2012</div>
-            </div>
-            <div class="col-xs-9">
-              <div class="profession">Junior Engineer</div>
-              <div class="description">Created mobile widgets utilizing HTML5, CSS3, and Javascript in a small
-                startup. Created examples for mobile applications for conferences.
+              <div class="profession">{{experience.title}}</div>
+              <div class="description">{{experience.description}}
               </div>
             </div>
           </div>
@@ -142,14 +86,11 @@
         <div class="section">
           <h2>Languages</h2>
 
-          <div class="Languages">
-            <div class="item-skills" ni-bargraph="0.85">Python</div>
-            <div class="item-skills" ni-bargraph="0.75">Javascript</div>
-            <div class="item-skills" ni-bargraph="0.6">Java</div>
-            <div class="item-skills" ni-bargraph="0.6">PHP</div>
-            <div class="item-skills" ni-bargraph="0.40">R</div>
-            <div class="item-skills" ni-bargraph="0.2">C/C++</div>
-            <div class="item-skills" ni-bargraph="0.175">Ruby</div>
+            <div class="Languages">
+            <div ng-repeat="language in languages">
+              <div class="item-skills" ni-bargraph="{{language.percent}}">{{language.name}}</div>
+            </div>
+            
             <div class="skills-legend clearfix">
               <div class="legend-left legend">Basic</div>
               <div class="legend-left legend"><span></span>Proficent</div>
@@ -163,35 +104,31 @@
           <h2>Other Skills</h2>
 
           <div class="Languages">
-            <div class="item-skills" ni-bargraph="0.85">HTML5/CSS3</div>
-            <div class="item-skills" ni-bargraph="0.75">d3.js</div>
-            <div class="item-skills" ni-bargraph="0.75">Data Anaylsis</div>
-            <div class="item-skills" ni-bargraph="0.7">JQuery</div>
-            <div class="item-skills" ni-bargraph="0.6">Backbone.js</div>
-            <div class="item-skills" ni-bargraph="0.45">Mobile Web Design</div>
+            <div ng-repeat="otherSkill in otherSkills">
+              <div class="item-skills" ni-bargraph="{{otherSkill.percent}}">{{otherSkill.name}}</div>
+            </div>
             <div class="skills-legend clearfix">
               <div class="legend-left legend">Basic</div>
-              <div class="legend-left legend"><span>Proficient</span></div>
-              <div class="legend-right legend"><span>Expert</span></div>
-              <div class="legend-right legend">Master</div>
+              <div class="legend-left legend"><span></span>Proficent</div>
+              <div class="legend-right legend"><span>Advanced</span></div>
+              <div class="legend-right legend">Expert</div>
             </div>
           </div>
         </div>
 
         <div class="section">
-          <h2>Applications</h2>
+          <h2>Frameworks</h2>
 
           <div class="Languages">
-            <div class="item-skills" ni-bargraph="1.00">FL Studio</div>
-            <div class="item-skills" ni-bargraph="0.68">ProTools</div>
-            <div class="item-skills" ni-bargraph="0.50">Photoshop</div>
-            <div class="item-skills" ni-bargraph="0.40">Illustrator</div>
+            <div ng-repeat="framework in frameworks">
+              <div class="item-skills" ni-bargraph="{{framework.percent}}">{{framework.name}}</div>
+            </div>
 
             <div class="skills-legend clearfix">
               <div class="legend-left legend">Basic</div>
-              <div class="legend-left legend"><span>Proficient</span></div>
-              <div class="legend-right legend"><span>Expert</span></div>
-              <div class="legend-right legend">Master</div>
+              <div class="legend-left legend"><span></span>Proficent</div>
+              <div class="legend-right legend"><span>Advanced</span></div>
+              <div class="legend-right legend">Expert</div>
             </div>
           </div>
         </div>
@@ -199,32 +136,14 @@
         <div class="section">
           <h2>Activities</h2>
 
-          <div class="activity clearfix">
+          <div ng-repeat="activity in activities" class="activity clearfix">
             <div class="col-xs-3 innerE">
-              <div class="title"></div>
-              <div class="info">10/2012-present</div>
+              <div class="title">{{activity.place}}</div>
+              <div class="info">{{activity.time}}</div>
             </div>
             <div class="col-xs-9">
-              <div class="profession">Atlanta Hawk's Sixth Man</div>
-              <div class="description">
-                Attend every Atlanta Hawk's home game and lead cheers. Create a fan friendly atmosphere and encourage fan
-                participation.
-              </div>
-            </div>
-          </div>
-
-          <div class="activity clearfix">
-            <div class="col-xs-3 innerE">
-              <div class="title"></div>
-              <div class="info">2010-2013</div>
-            </div>
-            <div class="col-xs-9">
-              <div class="profession">Music Production</div>
-              <div class="description">
-                Produced, mixed, and mastered music for local acts. Produced album that generated over a
-                thousand downloads in the first day. Worked in home and professional studios. Assisted with
-                design of artwork and logos in Photoshop and Illustrator.
-              </div>
+              <div class="profession">{{activity.title}}</div>
+              <div class="description">{{activity.description}}</div>
             </div>
           </div>
         </div>

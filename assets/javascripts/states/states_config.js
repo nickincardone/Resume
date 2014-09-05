@@ -20,7 +20,8 @@
       url: '/',
       views: {
         '': { 
-          templateUrl: 'resume.html'
+          templateUrl: 'resume.html',
+          controller: 'resumeController'
         },
         'header': {
           templateUrl: 'header.html'

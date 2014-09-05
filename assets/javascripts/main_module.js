@@ -7,6 +7,7 @@
     'ni.States',
     'ni.Templates',
     'ni.Bargraph',
+    'ni.Resume',
     'ni.Validator'
   ];
 
