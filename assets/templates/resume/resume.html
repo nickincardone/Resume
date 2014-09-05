@@ -1,161 +1,125 @@
 <div class="content-container container">
-
-
   <div class="jumbotron">
-    <h1>Nick Incardone</h1>
-
+    <h1>{{nichlos.name}}</h1>
     <div id="photo">
-    <img src="dist/images/profile.jpg" alt="avatar">
+      <img ng-src="{{nichlos.avatar}}" alt="avatar">
     </div>
-
-    <p class="lead">I am a multi-talented developer, full stack programmer, and data scientist living in Atlanta, Ga.
-      I am graduating in December and seeking a web development position. </p>
-
-    </div>
-
-    <div class="row marketing">
-      <div class="col-xs-12 col-sm-6">
-
-        <div class="section clearfix">
-          <h2>Contact</h2>
-
-          <div class="contact-item">
-            <div class="icon pull-left text-center"><span class="fa fa-envelope fa-fw"></span></div>
-            <div class="title only pull-right">nickincardone@gmail.com</div>
-          </div>
-          <div class="contact-item">
-            <div class="icon pull-left text-center"><span class="fa fa-phone fa-fw"></span></div>
-            <div class="title only pull-right">770-401-0916</div>
-          </div>
-          <div class="contact-item">
-            <div id="last" class="icon pull-left text-center"><span class="fa fa-linkedin fa-fw"></span></div>
-            <div class="title only pull-right">
-              <a href="https://www.linkedin.com/pub/nick-incardone/47/583/662">LinkedIn</a>
-            </div>
-          </div>
-
-        </div>
-
-        <div class="section">
-          <h2>Education</h2>
-
-          <div class="activity clearfix">
-            <div class="col-xs-3 innerE">
-              <div class="title">Expected</div>
-              <div class="info">12/2014</div>
-            </div>
-            <div class="col-xs-9">
-              <div class="profession">Georgia Institute of Technology</div>
-              <div class="description">
-                Bachelor of Science,
-                Computer Science<br/>
-                Focus in Data Science and Artificial Intelligence
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="section">
-          <h2>Experience</h2>
-          <div ng-repeat="experience in experiences"class="activity clearfix">
-            <div class="col-xs-3 innerE">
-              <div class="title">{{experience.place}}</div>
-              <div class="info">{{experience.location}}</div>
-              <div class="info">{{experience.time}}</div>
-            </div>
-            <div class="col-xs-9">
-              <div class="profession">{{experience.title}}</div>
-              <div class="description">{{experience.description}}
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="section">
-          <h2>Projects</h2>
-          <h4><a href="https://github.com/nickincardone">Visit My GitHub</a></h4>
-        </div>
-
-
-
-
-
-      </div>
-
-      <div class="col-xs-12 col-sm-6">
-        <div class="section">
-          <h2>Languages</h2>
-
-            <div class="Languages">
-            <div ng-repeat="language in languages">
-              <div class="item-skills" ni-bargraph="{{language.percent}}">{{language.name}}</div>
-            </div>
-            
-            <div class="skills-legend clearfix">
-              <div class="legend-left legend">Basic</div>
-              <div class="legend-left legend"><span></span>Proficent</div>
-              <div class="legend-right legend"><span>Advanced</span></div>
-              <div class="legend-right legend">Expert</div>
-            </div>
-          </div>
-        </div>
-
-        <div class="section">
-          <h2>Other Skills</h2>
-
-          <div class="Languages">
-            <div ng-repeat="otherSkill in otherSkills">
-              <div class="item-skills" ni-bargraph="{{otherSkill.percent}}">{{otherSkill.name}}</div>
-            </div>
-            <div class="skills-legend clearfix">
-              <div class="legend-left legend">Basic</div>
-              <div class="legend-left legend"><span></span>Proficent</div>
-              <div class="legend-right legend"><span>Advanced</span></div>
-              <div class="legend-right legend">Expert</div>
-            </div>
-          </div>
-        </div>
-
-        <div class="section">
-          <h2>Frameworks</h2>
-
-          <div class="Languages">
-            <div ng-repeat="framework in frameworks">
-              <div class="item-skills" ni-bargraph="{{framework.percent}}">{{framework.name}}</div>
-            </div>
-
-            <div class="skills-legend clearfix">
-              <div class="legend-left legend">Basic</div>
-              <div class="legend-left legend"><span></span>Proficent</div>
-              <div class="legend-right legend"><span>Advanced</span></div>
-              <div class="legend-right legend">Expert</div>
-            </div>
-          </div>
-        </div>
-
-        <div class="section">
-          <h2>Activities</h2>
-
-          <div ng-repeat="activity in activities" class="activity clearfix">
-            <div class="col-xs-3 innerE">
-              <div class="title">{{activity.place}}</div>
-              <div class="info">{{activity.time}}</div>
-            </div>
-            <div class="col-xs-9">
-              <div class="profession">{{activity.title}}</div>
-              <div class="description">{{activity.description}}</div>
-            </div>
-          </div>
-        </div>
-
-
-
-
-      </div>
-    </div>
-
-    <div class="footer">
-      <p>&copy; Nick Incardone 2014</p>
-    </div>
-
+    <p class="lead">{{nichlos.description}}</p>
   </div>
+  <div class="row marketing">
+    <div class="col-xs-12 col-sm-6">
+      <div class="section clearfix">
+        <h2>Contact</h2>
+        <div class="contact-item">
+          <div class="icon pull-left text-center"><span class="fa fa-envelope fa-fw"></span></div>
+          <div class="title only pull-right">{{nichlos.email}}</div>
+        </div>
+        <div class="contact-item">
+          <div class="icon pull-left text-center"><span class="fa fa-phone fa-fw"></span></div>
+          <div class="title only pull-right">{{nichlos.phone}}</div>
+        </div>
+        <div class="contact-item">
+          <div id="last" class="icon pull-left text-center"><span class="fa fa-linkedin fa-fw"></span></div>
+          <div class="title only pull-right">
+            <a ng-href="nichlos.linkedin">LinkedIn</a>
+          </div>
+        </div>
+      </div>
+      <div class="section">
+        <h2>Education</h2>
+        <div class="activity clearfix">
+          <div class="col-xs-3 innerE">
+            <div class="title">Expected</div>
+            <div class="info">{{nichlos.education.time}}</div>
+          </div>
+          <div class="col-xs-9">
+            <div class="profession">{{nichlos.education.school}}</div>
+            <div class="description">
+              {{nichlos.education.description1}}<br/>{{nichlos.education.description2}}
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="section">
+        <h2>Experience</h2>
+        <div ng-repeat="experience in nichlos.experiences"class="activity clearfix">
+          <div class="col-xs-3 innerE">
+            <div class="title">{{experience.place}}</div>
+            <div class="info">{{experience.location}}</div>
+            <div class="info">{{experience.time}}</div>
+          </div>
+          <div class="col-xs-9">
+            <div class="profession">{{experience.title}}</div>
+            <div class="description">{{experience.description}}
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="section">
+        <h2>Projects</h2>
+        <h4>&nbsp;&nbsp;&nbsp;&nbsp;<a ng-href="{{nichlos.github}}">Visit My GitHub</a></h4>
+      </div>
+    </div>
+    <div class="col-xs-12 col-sm-6">
+      <div class="section">
+        <h2>Languages</h2>
+        <div class="Languages">
+          <div ng-repeat="language in nichlos.languages">
+            <div class="item-skills" ni-bargraph="{{language.percent}}">{{language.name}}</div>
+          </div>
+          
+          <div class="skills-legend clearfix">
+            <div class="legend-left legend">Basic</div>
+            <div class="legend-left legend"><span></span>Proficent</div>
+            <div class="legend-right legend"><span>Advanced</span></div>
+            <div class="legend-right legend">Expert</div>
+          </div>
+        </div>
+      </div>
+      <div class="section">
+        <h2>Other Skills</h2>
+        <div class="Languages">
+          <div ng-repeat="otherSkill in nichlos.otherSkills">
+            <div class="item-skills" ni-bargraph="{{otherSkill.percent}}">{{otherSkill.name}}</div>
+          </div>
+          <div class="skills-legend clearfix">
+            <div class="legend-left legend">Basic</div>
+            <div class="legend-left legend"><span></span>Proficent</div>
+            <div class="legend-right legend"><span>Advanced</span></div>
+            <div class="legend-right legend">Expert</div>
+          </div>
+        </div>
+      </div>
+      <div class="section">
+        <h2>Frameworks</h2>
+        <div class="Languages">
+          <div ng-repeat="framework in nichlos.frameworks">
+            <div class="item-skills" ni-bargraph="{{framework.percent}}">{{framework.name}}</div>
+          </div>
+          <div class="skills-legend clearfix">
+            <div class="legend-left legend">Basic</div>
+            <div class="legend-left legend"><span></span>Proficent</div>
+            <div class="legend-right legend"><span>Advanced</span></div>
+            <div class="legend-right legend">Expert</div>
+          </div>
+        </div>
+      </div>
+      <div class="section">
+        <h2>Activities</h2>
+        <div ng-repeat="activity in nichlos.activities" class="activity clearfix">
+          <div class="col-xs-3 innerE">
+            <div class="title">{{activity.place}}</div>
+            <div class="info">{{activity.time}}</div>
+          </div>
+          <div class="col-xs-9">
+            <div class="profession">{{activity.title}}</div>
+            <div class="description">{{activity.description}}</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="footer">
+    <p>&copy; {{nichlos.name}} 2014</p>
+  </div>
+</div>
