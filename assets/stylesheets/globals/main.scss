@@ -2,8 +2,8 @@ body {
     background-color: $ni-blue;
     font-family: $main-font;
     font-weight: 400;
-  	font-size: 1em;
-  	color: #363636;
+    font-size: 1em;
+    color: #363636;
 }
 
 @media (min-width: 768px) {
@@ -13,13 +13,26 @@ body {
 }
 
 .content-container {
-	background-color: $white;
+    background-color: $white;
 }
 
 .jumbotron {
-	a {
-		font-size: 2em;
-		background-color: #fff;
-		border: 2px #e7e7e7 solid;
-	}
+    a {
+        font-size: 2em;
+        background-color: #fff;
+        border: 2px #e7e7e7 solid;
+    }
+}
+
+.shot-page {
+    .col-centered {
+        float: none;
+        margin: 0 auto;
+    }
+    select {
+        width: 140px;
+    }
+    svg {
+        border: black 1px solid;
+    }
 }

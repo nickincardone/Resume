@@ -9,6 +9,7 @@
     'ni.Templates',
     'ni.Bargraph',
     'ni.Resume',
+    'ni.Shotchart',
     'ni.NiValidator'
   ];
 

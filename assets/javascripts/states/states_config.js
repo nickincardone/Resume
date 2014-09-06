@@ -31,7 +31,8 @@
       url: '/shotchart',
       views: {
         '': { 
-          templateUrl: 'shotchart.html'
+          templateUrl: 'shotchart.html',
+          controller: 'shotchartController'
         },
         'header': {
           templateUrl: 'header.html'
