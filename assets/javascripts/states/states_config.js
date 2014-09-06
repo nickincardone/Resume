@@ -13,15 +13,25 @@
 
   function statesConfig($stateProvider, $urlRouterProvider) {
     $urlRouterProvider
-    .otherwise('/');
+    .otherwise('/resume');
 
     $stateProvider
-    .state('example',  {
-      url: '/',
+    .state('resume',  {
+      url: '/resume',
       views: {
         '': { 
           templateUrl: 'resume.html',
           controller: 'resumeController'
+        },
+        'header': {
+          templateUrl: 'header.html'
+        }
+      }
+    }).state('shotchart',  {
+      url: '/shotchart',
+      views: {
+        '': { 
+          templateUrl: 'shotchart.html'
         },
         'header': {
           templateUrl: 'header.html'

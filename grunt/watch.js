@@ -1,7 +1,7 @@
 module.exports = {
   scripts: {
     files: ['<%= jsPath %>/**/*.js'],
-    tasks: ['concat:dev'],
+    tasks: ['build:dist'],
     options: {
 
     }
@@ -11,12 +11,12 @@ module.exports = {
       '<%= cssPath %>/**/*.scss',
       '!<%= cssPath %>/**/styles.css',
     ],
-    tasks: ['sass:dev']
+    tasks: ['build:dist']
   },
   templates:  {
     files: [
       '<%= htmlPath %>/**/*.html'
     ],
-    tasks: ['ngtemplates:dev']
+    tasks: ['build:dist']
   }
 };
