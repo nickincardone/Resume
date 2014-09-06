@@ -37,6 +37,17 @@
           templateUrl: 'header.html'
         }
       }
+    }).state('niValidator',  {
+      url: '/niValidator',
+      views: {
+        '': { 
+          templateUrl: 'niValidator.html',
+          controller: 'niValidatorController'
+        },
+        'header': {
+          templateUrl: 'header.html'
+        }
+      }
     });
 
 

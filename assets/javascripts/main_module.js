@@ -5,10 +5,11 @@
 
   dependencies = [
     'ni.States',
+    'ni.Validator',
     'ni.Templates',
     'ni.Bargraph',
     'ni.Resume',
-    'ni.Validator'
+    'ni.NiValidator'
   ];
 
   angular.module('ni.Main', dependencies);

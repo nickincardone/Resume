@@ -15,3 +15,11 @@ body {
 .content-container {
 	background-color: $white;
 }
+
+.jumbotron {
+	a {
+		font-size: 2em;
+		background-color: #fff;
+		border: 2px #e7e7e7 solid;
+	}
+}
