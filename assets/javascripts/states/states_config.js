@@ -27,7 +27,8 @@
           templateUrl: 'header.html'
         }
       }
-    }).state('shotchart',  {
+    })
+    .state('shotchart',  {
       url: '/shotchart',
       views: {
         '': { 
@@ -38,7 +39,20 @@
           templateUrl: 'header.html'
         }
       }
-    }).state('niValidator',  {
+    })
+    .state('quiz',  {
+      url: '/quiz',
+      views: {
+        '': { 
+          templateUrl: 'quizApp.html',
+          controller: 'quizController'
+        },
+        'header': {
+          templateUrl: 'header.html'
+        }
+      }
+    })
+    .state('niValidator',  {
       url: '/niValidator',
       views: {
         '': { 

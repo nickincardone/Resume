@@ -10,7 +10,8 @@
     'ni.Bargraph',
     'ni.Resume',
     'ni.Shotchart',
-    'ni.NiValidator'
+    'ni.NiValidator',
+    'ni.Quiz'
   ];
 
   angular.module('ni.Main', dependencies);
