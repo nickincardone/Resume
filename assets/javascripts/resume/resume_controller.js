@@ -20,7 +20,7 @@
       'linkedin': "https://www.linkedin.com/pub/nick-incardone/47/583/662",
       'github': 'http://github.com/nickincardone',
       'avatar': 'dist/images/profile.jpg',
-      'description': 'I am a multi-talented developer, full stack programmer, and data scientist living in Atlanta, GA. I am graduating in December and seeking a web development position.',
+      'description': 'I am a multi-talented developer, full stack programmer, and data scientist living in Atlanta, GA. I am graduating in December. I currently work for Mother Nature Network.',
       'languages': [{
         'name': 'Python',
         'percent': 0.85
@@ -81,10 +81,18 @@
         'description1': 'Bachelor of Science, Computer Science',
         'description2' : 'Focus in Data Science and Artificial Intelligence'
       },
-      'experiences': [{
+      'experiences': [
+      {
+        'place': 'MNN',
+        'location': 'Atlanta, GA',
+        'time': '09/2014-present',
+        'title': 'Web Developer',
+        'description': "Developing analytics tool for conglomerate of sites that have 30 million hits a month. Creating in-house tools to identify problems and performance bottlenecks."
+      },
+      {
         'place': 'Procur',
         'location': 'Atlanta, GA',
-        'time': '07/2014-present',
+        'time': '07/2014-09/2014',
         'title': 'Web Development Intern',
         'description': 'Developing a large scale web application. Working on the back end utilizing node.js on the sails framework, with a MongoDB database, and on the front end using angular.js, sass, and jade. Using python to extract, clean, and transform data from large structured Excel spreadsheets. Working in a medium size team utilizing agile development principles.'
       }, {
@@ -92,7 +100,7 @@
         'location': 'Atlanta, GA',
         'time': '05/2014-08/2014',
         'title': 'Data Processing Intern',
-        'description': "Working remotely to transform data from structured .csv files to stylized Excel sheets using Java and Groovy (using the APACHE POI library). Creating client facing GUI's using VBA in Excel for large scale data inputs."
+        'description': "Worked remotely to transform data from structured .csv files to stylized Excel sheets using Java and Groovy (using the APACHE POI library). Created client facing GUI's using VBA in Excel for large scale data inputs."
       }, {
         'place': 'Ivan Allen College',
         'location': 'Atlanta, GA',
