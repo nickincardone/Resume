@@ -20,7 +20,7 @@
       'linkedin': "https://www.linkedin.com/pub/nick-incardone/47/583/662",
       'github': 'http://github.com/nickincardone',
       'avatar': 'dist/images/profile.jpg',
-      'description': 'I am a multi-talented developer, full stack programmer, and data scientist living in Atlanta, GA. I am graduating in December. I currently work for Mother Nature Network.',
+      'description': 'I am a multi-talented developer, full stack programmer, and data scientist living in Atlanta, GA. I currently work for Mother Nature Network.',
       'languages': [{
         'name': 'Python',
         'percent': 0.85
@@ -32,16 +32,13 @@
         'percent': 0.7
       }, {
         'name': 'PHP',
-        'percent': 0.6
+        'percent': 0.4
       }, {
         'name': 'R',
         'percent': 0.4
       }, {
         'name': 'C/C++',
-        'percent': 0.2
-      }, {
-        'name': 'Ruby',
-        'percent': 0.175
+        'percent': 0.15
       }],
       'otherSkills': [{
         'name': 'HTML5/CSS3',
@@ -66,14 +63,17 @@
         'percent': 0.5
       }],
       'frameworks': [{
-        'name': 'Node.js',
+        'name': 'Django',
         'percent': 0.85
+      },{
+        'name': 'Node.js',
+        'percent': 0.45
       }, {
         'name': 'PHP (LAMP)',
-        'percent': 0.68
+        'percent': 0.3
       }, {
-        'name': 'Python (Google App Engine)',
-        'percent': 0.55
+        'name': 'Google App Engine (Python)',
+        'percent': 0.3
       }],
       'education': {
         'time': '12/2014',
@@ -88,8 +88,7 @@
         'time': '09/2014-present',
         'title': 'Web Developer',
         'description': "Developing analytics tool for conglomerate of sites that have 30 million hits a month. Creating in-house tools to identify problems and performance bottlenecks."
-      },
-      {
+      },{
         'place': 'Procur',
         'location': 'Atlanta, GA',
         'time': '07/2014-09/2014',
@@ -132,13 +131,5 @@
         'description': "Produced, mixed, and mastered music for local acts. Produced album that generated over a thousand downloads in the first day. Worked in home and professional studios. Assisted with design of artwork and logos in Photoshop and Illustrator."
       }]
     };
-
-
-
-
-
-
-
   }
-
 })(angular);
