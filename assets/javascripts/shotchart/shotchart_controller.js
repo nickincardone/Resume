@@ -33,15 +33,11 @@
 
       d3.json("shots/" + player + ".json", function(error, json) {
         if (error) return console.warn(error);
-        data = json;
-        //console.log(""+data.length);
-        dataCopy = data.slice();
+        var data = json;
+        var dataCopy = data.slice();
         var $temp2 = angular.element(document.querySelector('#playerPicker2')).children(":selected");
         var player2 = $temp2.data("id");
         var team2 = $temp2.data("team");
-        //console.log(player2)
-        //console.log(player)
-
         var arrayLength = data.length;
         if (player2 != "0") {
           var sliceCount = 0
