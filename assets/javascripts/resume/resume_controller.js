@@ -42,16 +42,16 @@
       }],
       'otherSkills': [{
         'name': 'HTML5/CSS3',
-        'percent': 0.85
+        'percent': 0.9
+      }, {
+        'name': 'Angular.js',
+        'percent': 0.8
       }, {
         'name': 'Mobile Web Design',
         'percent': 0.73
       }, {
         'name': 'Bootstrap.js',
         'percent': 0.7
-      }, {
-        'name': 'Angular.js',
-        'percent': 0.65
       }, {
         'name': 'JQuery',
         'percent': 0.6
@@ -83,19 +83,25 @@
       },
       'experiences': [
       {
+        'place': 'Home Depot',
+        'location': 'Atlanta, GA',
+        'time': '08/2015-present',
+        'title': 'UI Developer',
+        'description': "Developing store facing Android applications utilizing Cordova and angular.js."
+      },{
         'place': 'MNN',
         'location': 'Atlanta, GA',
-        'time': '09/2014-present',
+        'time': '09/2014-08/2015',
         'title': 'Web Developer',
-        'description': "Developing analytics tool for conglomerate of sites that have 30 million hits a month. Creating in-house tools to identify problems and performance bottlenecks."
+        'description': "Developed analytics tool for conglomerate of sites that have 30 million hits a month. Creating in-house tools to identify problems and performance bottlenecks. Moved largest site from Drupal to Django and led front end development for redesign."
       },{
         'place': 'Procur',
         'location': 'Atlanta, GA',
         'time': '07/2014-09/2014',
         'title': 'Web Development Intern',
-        'description': 'Developing a large scale web application. Working on the back end utilizing node.js on the sails framework, with a MongoDB database, and on the front end using angular.js, sass, and jade. Using python to extract, clean, and transform data from large structured Excel spreadsheets. Working in a medium size team utilizing agile development principles.'
+        'description': 'Developed a large scale web application. Worked on the back end utilizing node.js on the sails framework, with a MongoDB database, and on the front end using angular.js, sass, and jade. Used python to extract, clean, and transform data from large structured Excel spreadsheets. Worked in a medium size team utilizing agile development principles.'
       }, {
-        'place': 'QuantiSense',
+        'place': 'Quanti Sense',
         'location': 'Atlanta, GA',
         'time': '05/2014-08/2014',
         'title': 'Data Processing Intern',
