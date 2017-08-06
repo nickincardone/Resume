@@ -6,7 +6,7 @@ module.exports = {
       }
     },
     files: {
-      '<%= distPath %>/niwebsite.min.js': [
+      '<%= distPath %>/site.min.js': [
         '<%= distPath %>/app.js'
       ]
     }

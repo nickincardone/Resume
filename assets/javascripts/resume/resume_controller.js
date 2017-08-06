@@ -16,11 +16,10 @@
     $scope.nichlos = {
       'name': 'Nick Incardone',
       'email': 'nickincardone@gmail.com',
-      'phone': '770-401-0916',
       'linkedin': "https://www.linkedin.com/pub/nick-incardone/47/583/662",
       'github': 'http://github.com/nickincardone',
       'avatar': 'dist/images/profile.jpg',
-      'description': 'I am a multi-talented developer, full stack programmer, and data scientist living in Atlanta, GA. I currently work for Mother Nature Network.',
+      'description': 'I am a multi-talented developer, full stack programmer, and data scientist living in Atlanta, GA. I currently work for Home Depot.',
       'languages': [{
         'name': 'Python',
         'percent': 0.85
