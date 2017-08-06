@@ -29,15 +29,6 @@
       }, {
         'name': 'Java',
         'percent': 0.7
-      }, {
-        'name': 'PHP',
-        'percent': 0.4
-      }, {
-        'name': 'R',
-        'percent': 0.4
-      }, {
-        'name': 'C/C++',
-        'percent': 0.15
       }],
       'otherSkills': [{
         'name': 'HTML5/CSS3',
@@ -49,15 +40,6 @@
         'name': 'Mobile Web Design',
         'percent': 0.73
       }, {
-        'name': 'Bootstrap.js',
-        'percent': 0.7
-      }, {
-        'name': 'JQuery',
-        'percent': 0.6
-      }, {
-        'name': 'Grunt.js',
-        'percent': 0.6
-      }, {
         'name': 'd3.js',
         'percent': 0.5
       }],
@@ -65,11 +47,11 @@
         'name': 'Django',
         'percent': 0.85
       },{
-        'name': 'Node.js',
-        'percent': 0.45
+        'name': 'Express',
+        'percent': 0.65
       }, {
-        'name': 'PHP (LAMP)',
-        'percent': 0.3
+        'name': 'Spring Boot',
+        'percent': 0.5
       }, {
         'name': 'Google App Engine (Python)',
         'percent': 0.3
@@ -85,8 +67,8 @@
         'place': 'Home Depot',
         'location': 'Atlanta, GA',
         'time': '08/2015-present',
-        'title': 'UI Developer',
-        'description': "Developing store facing Android applications utilizing Cordova and angular.js."
+        'title': 'Senior Software Engineer',
+        'description': "2016 Employee of the Year for Store Operations Software (~200 employees). Led team of three developers to create Store Supervisor tablet application. Designed and built hybrid application with Cordova, Angular.js, and Sinatra backend. Took over Tomcat Java project with weekly war room calls and architected and implemented safeguards to prevent system failures. Led development for labeling system upgrade. Upgrade was a centralized application that provided logging, alerts, and improved performance over previously in store solutions. Reduced software footprint from installations on ~2000 stores to four centralized instances. Produced applications on store side to interact with proof of concept projects, including digital labels, online pickup lockers, smart home experience, and faucet finder application. Worked with several vendors to adapt their technologies to Home Depot infrastructure and practices"
       },{
         'place': 'MNN',
         'location': 'Atlanta, GA',
